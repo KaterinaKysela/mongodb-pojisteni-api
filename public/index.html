@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="cs-cz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styl.css" type="text/css"/>
+    <title>Pojištěnci</title>
+</head>
+<body>
+    <header>
+        <div>
+            <h1><a href="index.html">PojjištěníApp</a></h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="pojistenci-novy.html">Pojištěnci</a></li>
+                <li><a href="pojisteni.html">Pojištění</a></li>
+                <li><a href="udalosti.html">Události</a></li>
+                <li><a href="oaplikaci.html">O aplikaci</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <article>
+        <header>
+            <h2>Pojištěnci</h2>
+        </header>
+
+        <section>
+            <form action="/pojistenec" method="POST">
+                <label for="jmeno">Jméno:</label>
+                <input type="text" id="jmeno" name="jmeno" placeholder="Jan" required>
+        
+                <label for="prijmeni">Příjení:</label>
+                <input type="text" id="prijmeni" name="prijmeni" placeholder="Novák" required>
+        
+                <label for="mesto">Město:</label>
+                <input type="text" id="mesto" name="mesto" placeholder="Praha 1" required>
+        
+                <label for="ulice">Ulice</label>
+                <input type="text" id="ulice" name="ulice" placeholder="Ve Svahu 3" required>
+        
+                <label for="psc">PSČ:</label>
+                <input type="text" id="psc" name="psc" placeholder="100 00" required>
+        
+                <label for="email">E-mail:</label>
+                <input type="text" id="email" name="email" placeholder="jannovak88@seznam.cz" required>
+        
+                <label for="telefon">Telefon:</label>
+                <input type="text" id="telefon" name="telefon" placeholder="731 584 972" required>
+        
+                <button type="submit">Uložit</button>
+               </form>
+        </section>
+    </article>
+
+    <script src="js/Aplikace.js"></script>
+    <script src="js/Pojistenec.js"></script>
+    <script src="js/obsluha.js"></script>
+</body>
+</html>
